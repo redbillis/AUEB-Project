@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="random_quotes.js"></script>
+
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Earth's Page</title>
+</head>
+<body>
+    <!--==================== NAVBAR START ====================-->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Mother Earth <i class="bi bi-globe"></i> </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--==================== NAVBAR END ====================-->
+
+    <!--==================== MAIN START ====================-->
+    <main class="main">
+        <!--==================== HOME START ====================-->
+        <section id="home">
+            <img src="./img/sushobhan-badhai-LrPKL7jOldI-unsplash.jpg" class="img-fluid" alt="earth-sprouting">
+            <h1 id="earth"><strong>Hi, I am Earth! <br> Welcome to my Page!</strong></h1>
+        </section>
+        <!--==================== HOME END ====================-->
+
+        <!--==================== RANDOM QUOTE START ====================-->
+        <div class="container">
+            <div class="row py-5">
+              <div class="col-md-8 offset-md-2">
+                <wrapper id="quote-box">
+                  <div class="card">
+                    <div class="card-header text-center">Human Quotes For ME!</div>
+                    <div class="card-body text-center">
+                      <blockquote class="blockquote mb-3">
+                        <p>
+                          <div id="text"></div>
+                        </p>
+                        <footer class="blockquote-footer mb-4">
+                          <cite id="author"></cite>
+                        </footer>                  
+                      </blockquote>
+                      <button id="new-quote" onClick="generateQuote();" class="btn btn-block btn-success">New Quote</button>
+                      <a href="#" id="tweet-quote" target="_blank" class="btn btn-block btn-primary">Tweet</a>
+                    </div>
+                  </div>
+                </wrapper>
+              </div>
+            </div>
+          </div>
+        <!--==================== RANDOM QUOTE END ====================-->
+
+        <!--==================== ABOUT START ====================-->
+        <section id="about">
+            <div class="container my-5">
+
+            <div class="text-center mb-5">
+                <h1 class="fw-bold section__title">About Me</h1>
+                <p class="lead section__subtitle">My introduction</p>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-md-6 my-4">
+                    <p class="lead about__description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magni atque animi ab magnam nobis at quam fuga hic odio nostrum deleniti illo excepturi, eius temporibus dolorum, ipsam dignissimos numquam optio obcaecati nihil nam facilis suscipit! Dignissimos dolor iusto fuga voluptatem, voluptatum numquam beatae quia officiis nulla iure delectus explicabo.</p>
+
+                    <div class="row text-center my-5 about__info"> <!-- It was justify-content-between -->
+                        <div class="col-4">
+                            <p class="display-6 fw-bold about__info-title">4.54±0.05 billion</p>
+                            <p class="lead about__info-name">Earth's <br> Age</p>
+                        </div>
+
+                        <div class="col-4">
+                            <p class="display-6 fw-bold about__info-title">07+ billion</p>
+                            <p class="lead about__info-name">Humans <br> on Earth</p>
+                        </div>
+                        
+                        <div class="col-4">
+                            <p class="display-6 fw-bold about__info-title">3-30 million</p>
+                            <p class="lead about__info-name">Animal Species<br> on Earth</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!--==================== ABOUT END ====================-->
+
+        <!--==================== CONTACT ME START ====================-->
+        <section id="contact">
+            <div class="container my-5">
+
+            <div class="text-center mb-5">
+                <h1 class="fw-bold section__title">Contact Me</h1>
+                <p class="lead section__subtitle">Get in touch</p>
+            </div>
+
+            <!-- Form Element Start -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                
+                <form action="">
+                    <!-- Name and Email Fields Start -->
+                    <div class="row g-2">
+
+                    <!-- Name Field Start -->
+                    <div class="col-md">
+                        <div class="form-floating mb-3 text-primary">
+                        <input type="name" class="form-control bg-dark text-primary" id="floatingInput" placeholder="">
+                        <label for="floatingInput">Name</label>
+                        </div>
+                    </div>
+                    <!-- Name Field End -->
+
+                    <!-- Email Field Start -->
+                    <div class="col-md">
+                        <div class="form-floating mb-3 text-danger">
+                        <input type="email" class="form-control bg-dark text-danger" id="floatingInput" placeholder="">
+                        <label for="floatingInput">Email</label>
+                        </div>
+                    </div>
+                    <!-- Email Field End -->
+
+                    </div>
+                    <!-- Name and Email Fields End -->
+                    
+                    <!-- Subject Field Start -->
+                    <div class="form-floating mb-3 text-success">
+                    <input type="subject" class="form-control bg-dark text-success" id="floatingInput" placeholder="">
+                    <label for="floatingInput">Subject</label>
+                    </div>
+                    <!-- Subject Field End -->
+
+                    <!-- Message Field Start -->
+                    <div class="form-floating text-info">
+                    <textarea class="form-control bg-dark text-info" placeholder="" id="floatingTextarea" style="height: 250px"></textarea>
+                    <label for="floatingTextarea">Message</label>
+                    </div>
+                    <!-- Message Field Start -->
+                </form>
+
+                <div class="my-4 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message <i class="bi bi-send"></i></button>
+                </div>
+                
+                </div>
+            </div>
+            <!-- Form Element End -->
+
+            </div>
+        </section>
+        <!--==================== CONTACT ME START ====================-->
+
+
+    </main>
+    <!--==================== MAIN END ====================-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

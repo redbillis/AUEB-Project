@@ -10,6 +10,50 @@ img{
     margin-bottom: 250px;
 }
 
+/* Footer Start */
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.social > a {
+    text-decoration: none;
+}
+
+.social > a > i {
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #1faa4e 0%, #01a7d4 74%);
+    padding: 10px;
+    margin: 10px;
+    color: #ffffff;
+    border: 1px none;
+    border-radius: 40%;
+    font-size: 18px;
+}
+
+.social > a > i:hover {
+    cursor: pointer;
+    background-color: #485461;
+    background-image: linear-gradient(15deg, #485461 0%, #28313b 74%);
+}
+
+.copyrights {
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+}
+
+.bill {
+    text-decoration: none;
+    color: #07a314;
+}
+
+.bill:hover {
+    color: rgb(185, 185, 185);
+}
+/* Footer End */
+
 @media (max-width: 992px) {
     #earth {
         margin-top: -250px;

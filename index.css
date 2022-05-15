@@ -33,7 +33,7 @@ img{
 }
 
 .social > a > i:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: #485461;
     background-image: linear-gradient(15deg, #485461 0%, #28313b 74%);
 }

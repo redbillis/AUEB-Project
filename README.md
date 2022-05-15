@@ -1,4 +1,4 @@
 # AUEB-Project
-Not Ready yet!!
+Earth's personal website! Our opportunity to come in contact with our Home Planet!
 
-https://redbillis.github.io/AUEB-Project/
+Link: https://redbillis.github.io/AUEB-Project/
